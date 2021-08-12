@@ -15,23 +15,17 @@ const rightbtn=document.getElementById("right");
         y:180,
         leftmover:function(){
             machine.x-=10;
-            // ctx.clearRect(0,0,can.width,can.height);
-            // ctx.fillRect(machine.x,machine.y,10,10);
             console.log(machine.x,machine.y,);
             },
 
         rightmover:function(){
             machine.x+=10;
-            // ctx.clearRect(0,0,can.width,can.height);
-            // ctx.fillRect(machine.x,machine.y,10,10);
             console.log(machine.x,machine.y,);
             },
         }
 
     let ammo={
         name:"ammo",
-        // x:machine.x,
-        // y:machine.y,
         sw:0,
         MoveVol:0,
         shotmover:function(){
@@ -46,17 +40,9 @@ const rightbtn=document.getElementById("right");
         },
     }
 
-    
-
-
 shotbtn.addEventListener("click",ammo.shotmover);
 leftbtn.addEventListener("click",machine.leftmover);
 rightbtn.addEventListener("click",machine.rightmover);
-
-    // ctx.fillRect(50 ,50,10,10);
-
-            // ctx.clearRect(0,0,can.width,can.height);
-            // ctx.fillRect(machine.x,machine.y,10,10);
 
 
 function Game(){
@@ -80,9 +66,3 @@ requestAnimationFrame(Game);
 }
 
  Game();
-
-// (()=>{
-    
-//     requestAnimationFrame(Game);
-// }
-// )();
